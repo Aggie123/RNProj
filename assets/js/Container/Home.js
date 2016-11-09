@@ -41,11 +41,9 @@ export default class Home extends BaseComponent {
   _renderRow(rowData, sectionID, rowID){
     let data=rowData;
     return (
-      <View style={{height:80,flexDirection:'row',alignItems:'center',backgroundColor:'#fff'}} key={data.id}>
-        <View style={{width:70,height:70,alignItems:'center',justifyContent:'center',backgroundColor:'#0f0'}}>
-         
-          <Image style={{width:70,height:70}} source={{uri:'http://static.home.mi.com/app/shop/img?id=shop_295d6f30a3654063c770265e66fdce58.jpeg&w=420&h=240'}} />
-        </View>
+      <View style={{height:80,flexDirection:'row',alignItems:'center',backgroundColor:'#fff',borderBottomWidth :1,borderColor:'#eee'}} key={data.id}>
+        
+        <Image style={{width:70,height:70}} source={{uri:'http://static.home.mi.com/app/shop/img?id=shop_295d6f30a3654063c770265e66fdce58.jpeg&w=420&h=240'}} />
 
         <View style={{flex:1}}>
           <Text style={{fontSize:14}} numberOfLines={1}>{data.name}</Text>
