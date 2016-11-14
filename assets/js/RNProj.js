@@ -12,10 +12,17 @@ import {
 //import MyScene from './MyScene';
 import Home from './Container/Home';
 import ScrollFun from './Container/ScrollFun';
+import AppBottom from './Component/AppBottom'
 /*import Page1 from './Container/Page1';
 import Page2 from './Container/Page2';*/
 
 export default class RNProj extends Component {
+
+  renderScene(route, navigator) {
+    let Component = route.component;
+    return <Component route={route} navigator={navigator}/>
+  }
+
   render() {
     //let navBar=<View><TouchableHighlight onPress={()=>{this.props.navigator}}>返回</TouchableHighlight></View>;
     return ( <Navigator 
@@ -26,12 +33,8 @@ export default class RNProj extends Component {
           component: Home
         }
       }
-      renderScene = {
-        (route, navigator) => {
-          let Component = route.component;
-          return <Component route={route} navigator={navigator}/>
-        }
-      }
+      renderScene = {this.renderScene}
+      navigationBar ={<AppBottom/>}
       />
     );
   }

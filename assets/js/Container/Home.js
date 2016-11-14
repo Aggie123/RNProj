@@ -17,6 +17,7 @@ import Page2 from './Page2';
 import Page3 from './Page3';
 import Page4 from './Page4';
 import homeList from '../Data/data'
+import AppBottom from '../Component/AppBottom'
 
 var img1=require('../../res/img/banner1.jpg');
 
@@ -134,7 +135,7 @@ const styles=StyleSheet.create({
   contentContainer:{
     flex:1,
     width:CommonStyles.viewWidth,
-    marginBottom:10,
+    //marginBottom:40,
     //backgroundColor:'#f00'
   }
 })
