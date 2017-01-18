@@ -120,7 +120,7 @@ exports.examples = [
       );
     }
   },
-  {
+  /*{
     title: 'Custom thumb image',
     platform: 'ios',
     render(): React.Element<any> {
@@ -145,5 +145,5 @@ exports.examples = [
         />
       );
     }
-  },
+  },*/
 ];

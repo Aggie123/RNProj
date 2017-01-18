@@ -14,6 +14,6 @@ import {
   TouchableHighlight,
 } from 'react-native';
 
-import RNProj from './assets/js/RNProj';
+import RNProj from './assets/js/RNProjTest';
 
 AppRegistry.registerComponent('RNProj', () => RNProj);

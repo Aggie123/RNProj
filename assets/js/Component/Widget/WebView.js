@@ -329,7 +329,7 @@ exports.examples = [
     title: 'Scale Page to Fit',
     render(): ReactElement { return <ScaledWebView/>; }
   },
-  {
+ /* {
     title: 'Bundled HTML',
     render(): ReactElement {
       return (
@@ -343,7 +343,7 @@ exports.examples = [
         />
       );
     }
-  },
+  },*/
   {
     title: 'Static HTML',
     render(): ReactElement {

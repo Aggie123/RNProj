@@ -16,6 +16,7 @@ import Page1 from './Page1';
 import Page2 from './Page2';
 import Page3 from './Page3';
 import Page4 from './Page4';
+import PageList from './PageList'
 import homeList from '../Data/data'
 import AppBottom from '../Component/AppBottom'
 
@@ -77,7 +78,7 @@ export default class Home extends BaseComponent {
           <TouchableHighlight style={styles.menuBtn} underlayColor={CommonStyles.touchHighlightBg} onPress={this._openThisComponent.bind(this,'Page2',Page2)}>
             <Text style={styles.menuBtnTxt}>Page 2</Text>
           </TouchableHighlight>
-          <TouchableHighlight style={styles.menuBtn} underlayColor={CommonStyles.touchHighlightBg} onPress={this._openThisComponent.bind(this,'Page3',Page3)}>
+          <TouchableHighlight style={styles.menuBtn} underlayColor={CommonStyles.touchHighlightBg} onPress={this._openThisComponent.bind(this,'PageList',PageList)}>
             <Text style={styles.menuBtnTxt}>Page 3</Text>
           </TouchableHighlight>
           <TouchableHighlight style={styles.menuBtn} underlayColor={CommonStyles.touchHighlightBg} onPress={this._openThisComponent.bind(this,'Page4',Page4)}>
