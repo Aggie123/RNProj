@@ -47,19 +47,15 @@ export default class CommonModal extends BaseComponent {
   }
   handleOk() {
     Alert.alert(
-            '提 示',
-            '您确定要删除这个地址吗？',
-            [
-                {
-                    text: '删除', onPress: () => {
-                }
-                },
-                {
-                    text: '取消', onPress: () => {
-                }
-                },
-            ]
-        );
+      '提 示',
+      '您确定要删除这个地址吗？', [{
+        text: '删除',
+        onPress: () => {}
+      }, {
+        text: '取消',
+        onPress: () => {}
+      }, ]
+    );
 
   }
 
@@ -78,32 +74,39 @@ export default class CommonModal extends BaseComponent {
     return (
       <View style={styles.container}>
         <MiButton 
-              text={'Show CommonModal'} 
+              text={'Show Modal2'} 
+              type={'default'}
               onClick={this.showModal}/>
 
         <MiModal
-        animationType={"slide"}
-        visible={modalVisible}
-        transparent={transparent}
-        title={'普通弹窗'}
-        onOK={this.handleOk}
-        onCancle={this.hideModal}
-        onRequestClose={this.hideModal}
-        footer={<MiButton 
-                text={'关闭'} 
-                size={'large'}
-                type={'sec'}
-                containerStyle={{flex:1,borderRadius:5}}
-                onClick={this.hideModal}/>}>
-            <Text style={{lineHeight:30}}>Hello World!Hello World!Hello World!Hello World!Hello World!</Text>
-            <Text style={{lineHeight:30}}>Hello World!Hello World!Hello World!Hello World!Hello World!</Text>
-        </MiModal>
+          animationType={"slide"}
+          visible={modalVisible}
+          transparent={transparent}
+          title={'普通弹窗'}
+          onOK={this.handleOk}
+          onCancle={this.hideModal}
+          footer={[<MiButton 
+                    text={'关闭'} 
+                    type={'sec'}
+                    size={'large'}
+                    containerStyle={{flex:1,borderRadius:5}}
+                    onClick={() => {this.setModalVisible(!this.state.modalVisible)}}/>,
+                  <MiButton
+                    text={'确认'}
+                    type={'sec'}
+                    size={'large'}
+                    containerStyle={{flex:1,borderRadius:5}}
+                    onClick={()=>{}}
+                    textStyle={{color:'#00b377'}}
+                    /> ]}
+          >
+              <Text style={{lineHeight:30}}>Hello World!Hello World!Hello World!Hello World!Hello World!</Text>
+          </MiModal>
 
       </View>
     )
   }
 }
-
 
 const styles = StyleSheet.create({
   container: {

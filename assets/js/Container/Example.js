@@ -10,6 +10,7 @@ import BaseComponent from '../Component/BaseComponent'
 import CommonNavBar from '../Component/NavBar/CommonNavBar'
 import ScrollFun from './ScrollFun'
 import CommonModal from '../Component/Modal/CommonModal'
+import Modal2 from '../Component/Modal/Modal2'
 import MiButton from '../Component/Button/index'
 
 export default class Example extends BaseComponent {
@@ -111,7 +112,14 @@ export default class Example extends BaseComponent {
         
         
         <Text style={{marginTop:20}}>Modal</Text>
-        <CommonModal/>
+          <CommonModal/>
+          <Modal2/>
+
+        {/*<View style={{flexDirection:'row'}}>
+          <CommonModal/>
+          <Modal2/>
+        </View>*/}
+
       </View>
     )
   }

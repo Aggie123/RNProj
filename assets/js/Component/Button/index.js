@@ -1,5 +1,6 @@
 import React, {
-  Component
+  Component,
+  PropTypes
 } from 'react';
 import {
   View,
@@ -26,11 +27,11 @@ export default class MiButton extends Component {
   }
 
   static propTypes = {
-    text: React.PropTypes.string, 
-    type:React.PropTypes.string,
-    size:React.PropTypes.string,
-    disabled:React.PropTypes.bool,
-    onClick:React.PropTypes.function,
+    text: PropTypes.string, 
+    type:PropTypes.string,
+    size:PropTypes.string,
+    disabled:PropTypes.bool,
+    onClick:PropTypes.func,
   }
 
   render() {

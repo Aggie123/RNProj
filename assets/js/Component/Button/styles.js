@@ -85,6 +85,9 @@ let styles = StyleSheet.create({
 	text_disabled_sec: {
 		color: '#ccc'
 	},
+	text_green:{
+		color:'#00b377'
+	}
 
 })
 
